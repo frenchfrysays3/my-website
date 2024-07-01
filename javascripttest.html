@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of frenchfrysays</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <meta charset=utf-8>
+    <title>javascript test</title>
+    <link rel=stylesheet href=https://frenchfrysays.neocities.org/style.css type=text/css>
   </head>
   <body>
-    <h1>Welcome to my Website!</h1>
+    <div class=topnav>
+      <a href=https://frenchfrysays.neocities.org/>Home(this page)</a>
+      <a href=https://frenchfrysays.neocities.org/others/news/news>News</a>
+      <a href=https://frenchfrysays.neocities.org/others/aboutus>About us</a>
+      <a href=https://frenchfrysays.neocities.org/subscriptions/pages/subscriptions>Subscriptions</a>
+      <a href=https://frenchfrysays.neocities.org/others/store/store>Store</a>
+      <a href=https://frenchfrysays.neocities.org/support/support>Support</a>
+      <a href=https://frenchfrysays.neocities.org/others/contact-us>Contact us</a>
+      <a href=https://frenchfrysays.neocities.org/others/youtubearchive/youtubearchive>The youtube archive</a>
+    </div>
+    <div class=main>
+      <h1>Javascript Test</h1>
+      <div class=main2>
+        <p id="spinningText">Spinny text!</p>
 
-    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+        <script>
+          const textElement = document.getElementById("spinningText");
 
-    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+          function spinText() {
+            let currentAngle = 0;
+            textElement.style.transform = `rotate(${currentAngle}20)`;
 
-    <p>Here's how you can add an image:</p>
-    <img src="/neocities.png">
+            setInterval(() => {
+              currentAngle += 5; // Adjust the value for speed of rotation (e.g., 10 for slower)
+              textElement.style.transform = `rotate(${currentAngle}20)`;
+            }, 10); // Adjust the value to control animation smoothness (e.g., 20 for smoother)
+          }
 
-    <p>Here's how to make a list:</p>
-
-    <ul>
-      <li>First thing</li>
-      <li>Second thing</li>
-      <li>Third thing</li>
-    </ul>
-
-    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+          spinText();
+        </script>
+      </div>
+    </div>
   </body>
 </html>
