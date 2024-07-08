@@ -11,3 +11,5 @@ The first # is the main release
 The second # is the Minor Release
 
 The third # is a bug fix
+
+neocities.org host your website for free!
