@@ -6,10 +6,10 @@ You can download the source code on the right
 
 v indicates version
 
-The first # is the main release
+The first # is the main version
 
-The second # is the Minor Release
+The second # is the Minor version
 
-The third # is a bug fix
+The third # is the version to the release
 
-neocities.org host your website for free!
+neocities.org: host your website for free!
