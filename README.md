@@ -1,3 +1,13 @@
+# welcome to the code for <a href=https://frenchfrysays.neocities.org/index>my website</a>!
+> 
+
+
+
+
+
+
+
+
 This is an open-source project on GitHub
 
 I host the website on Neocities for free
